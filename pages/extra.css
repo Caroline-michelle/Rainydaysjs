@@ -1,0 +1,120 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+#product-page{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    
+}
+
+.product-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 800px;
+    height: auto;
+    padding: 20px;
+    border-radius: 0;
+    background: #0a3641;
+    box-shadow: none;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    border: 1px solid #ddd;
+    align-items: flex-start;
+
+}
+
+.productpageimg {
+    height: 500px;
+    width: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.productpageimg:hover {
+    transform: scale(1.05);
+}
+
+.productpagedetails {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.productpagetitle {
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+
+.productpageprice {
+    font-size: 22px;
+    color:white;
+    font-weight: 600;
+    text-align: left;
+    padding: 20px;
+}
+
+.productpagesizes, .productpagecolors {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.productpagesizes button, .productpagecolors button {
+    padding: 10px 15px;
+    border: 1px solid #000;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background 0.2s, color 0.2s;
+    
+}
+
+.productpagesizes button:hover, .productpagecolors button:hover {
+    background: #000;
+    color: white;
+}
+
+
+.productpagetags {
+    font-size: 12px;
+    color: white;
+    text-align: left;
+    gap: 35px;
+    justify-content: center;
+}
+
+.productpageaddtocart {
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    background:white;
+    color:black;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 0;
+    transition: background 0.3s;
+}
+
+.productpageaddtocart:hover {
+    background: #e55a00;
+}

@@ -1,82 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
-</head>
-<body>  
+  </head>
+  <>
+    <!-- Banner -->
     <div class="banner">
-        <div class="banner-content">
-          <text>Fri frakt over 699,-</text>
-          <text>Levering innen 1-3 dager!</text>
-          <text>30 dagers åpent kjøp!</text>
-        </div>
-      </div>
-      <div class="icons">
+      <p>Fri frakt over 699,-</p>
+      <p>Levering innen 1-3 dager!</p>
+      <p>30 dagers åpent kjøp!</p>
+    </div>
+    <!-- nav -->
+    <div class="nav">
+      <a href="Index.html">
+        <img src="Images/RainyDays_Logo.png" alt="Logo for RainyDays" />
+      </a>
+      <div>
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-user"></i>
-          <a href="cart.html">
-        <i class="fa-solid fa-cart-shopping"></i>
-      </a>
-    </div>
-      </div>
-    <div class="logo">
-        <a href="Index.html" target="rainymainpage">
-          <img src="Images/RainyDays_Logo.png" alt="Logo for rainydays" />
+        <a href="cart.html">
+          <i class="fa-solid fa-cart-shopping"></i>
         </a>
       </div>
-      <div class="searchbar">
-        <form
-          action="https://www.google.com/search"
-          method="get"
-          class="search-bar"
-        >
-          <input type="text" placeholder="search" name="q" />
-          <button type="submit"><img src="Images/search.png" /></button>
-        </form>
+    </div>
+    <div class="main">
+      <img src="Images/mainphoto.webp" alt="main" />
+      <div>
+        <button>Shop now</button>
       </div>
-      <h1> Our products </h1>
-      <div id="product-list"></div>
-    <div class="product-title"></div>
-    <div class="logo">
-      <footer>
-        <div class="footercontainer">
-            <h1 class="footerh1">High quality jackets for rainydays</h1>
-            <div class="footermid">
-            <div class="footer-heading">
-              <a href="link"> Customer service</a>
-              <a href="link"> Payment and delivery</a>
-              <a href="link"> Membership conditions</a>
-              <a href="link"> Returns</a>
-            </div>
-            <div>
-              <form id="Newsletter" action="">
-                <h2 class="newsheader">Sign up for our Newsletter</h2>
-                <input type="text" placeholder="Enter name" />
-                <input type="email" placeholder="Enter email" />
-                <input type="button" value="Subscribe" />
-              </form>
-            </div>
-            </div>
-            <div class="footerbottom">
-              <div class="footer-heading2">
-              <h1>Follow us</h1>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-square-instagram"></i>
-              <i class="fa-brands fa-youtube"></i>
-            </div>
-            <div class="footer-heading3">
-              <h1>Always safe payment</h1>
-              <i class="fa-brands fa-cc-visa "></i>
-              <i class="fa-brands fa-cc-mastercard"></i>
-              <i class="fa-brands fa-cc-amex"></i>
-            </div>
-          </div>
-        </div>
-      </footer>
+    </div>
+    <!-- Title -->
+    <h1 class="mainh1">Our products</h1>
+    <!-- Filter -->
+    <div id="filter"></div>
+    <!-- Product list -->
+     <div class="productlistcontainer">
+         <div id="product-list"></div>
+    </div>
+    
+    
+    <!-- Footer -->
+    <footer>
+      <div class="footercontainer">
+        <h1>Follow us</h1>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <h1>Always safe payment</h1>
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-amex"></i>
+      </div>
+    </footer>
+
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
