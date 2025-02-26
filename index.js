@@ -49,7 +49,7 @@ function createProduct(product) {
   const tags = document.createElement("ul");
   const colors = document.createElement("p");
 
-  link.href = `pages/productpage.html?id=${product.id}`;
+  link.href = `product/index.html?id=${product.id}`;
 
   title.innerText = product.title;
   img.src = product.image.url;

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="extra.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div>
+      <div>
+        <a href="/#"> Go home</a>
+      </div>
+    </div>
+    <div class="cart">
+      <div class="cartcontainer">
+        <div class="cartproducts"></div>
+        <div class="cartcheckout">
+          <div class="cartcheckout-summary">
+            <div class="total-label">Total price</div>
+            <div class="total-price"></div>
+          </div>
+
+          <div class="discount-container">
+            <label for="discountcode" class="discount-label"
+              >Discount code:</label
+            >
+            <input
+              type="text"
+              id="discountcode"
+              class="discount-input"
+              placeholder="Enter discount code"
+            />
+          </div>
+          <a href="/checkout/confirmation/index.html" class="purchase-button">
+            <button>Purchase</button>
+          </a>
+
+          <div class="payment-section">
+            <div class="payment-label">Payment Methods</div>
+            <div class="payment-icons">
+              <i class="fa-brands fa-cc-visa"></i>
+              <i class="fa-brands fa-cc-mastercard"></i>
+              <i class="fa-brands fa-cc-amex"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

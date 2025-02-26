@@ -1,7 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: helvetica;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
 }
 ul,
 li {
@@ -9,7 +12,6 @@ li {
 }
 a {
   text-decoration: none;
-  color: black;
 }
 #filter {
   display: flex;
@@ -64,22 +66,41 @@ a {
   margin: 0;
   padding: 0;
   font-family: Aria;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .main > img {
   width: 100%;
   height: 600px;
   object-fit: cover;
+  grid-column: 1 / span 3;
+  grid-row-start: 1;
 }
-.main > div > button {
+.main > div {
   display: flex;
-  background: #0a3641;
-  padding: 16px 32px;
-  border: none;
-  color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
   justify-content: center;
   align-items: center;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+.main > div > button {
+  display: block;
+  background: #0a3641;
+  height: fit-content;
+  padding: 12px 20px;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.main > div > button:hover {
+  background: #fff;
+  color: #0a3641;
+  scale: 110%;
+}
+.main > div > button > a {
+  display: block;
+  color: inherit;
 }
 
 .mainh1 {
@@ -96,12 +117,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 35px;
-  width: fit-content;
-}
-.productlistcontainer {
-  display: flex;
   justify-content: center;
+  margin: 32px 0;
 }
+
 .product-container {
   width: 250px;
 }
@@ -137,17 +156,37 @@ a {
   padding: 4px 8px;
 }
 
-.footercontainer {
-  display: flex;
-  height: 150px;
-  width: 100%;
+footer {
   background-color: #0a3641;
   color: white;
-  gap: 30px;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  height: 50px;
 }
-.footercontainer > h1 {
+
+.footercontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.footercontainer h1 {
   font-size: 25px;
+  margin-bottom: 5px;
 }
-.footercontainer > i {
-  font-size: 30px;
+
+.footercontainer i {
+  font-size: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footercontainer i:hover {
+  color: orange;
 }

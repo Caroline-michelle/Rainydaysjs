@@ -41,6 +41,11 @@ function createProductPage(product) {
   price.innerText = product.price;
   colors.innerText = product.baseColor;
   addtocart.innerText = "Add to cart";
+  addtocart.addEventListener("click", () => {
+    alert("Added to cart");
+    localStorage.setItem(product.id, product.id);
+    console.log(product);
+  });
   product.tags.forEach((tag) => {
     const li = document.createElement("li");
     li.innerText = tag;
